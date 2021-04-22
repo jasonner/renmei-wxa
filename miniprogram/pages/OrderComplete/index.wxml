@@ -1,0 +1,31 @@
+<!--miniprogram/pages/OrderComplete/index.wxml-->
+<view class="Order-complete">
+
+ <!-- 支付状态 -->
+ <view class="order-status">
+
+  <view class="order-status-icon">
+    <icon type="success" size="134"></icon>
+  </view>
+  <!-- 报名提示 -->
+  <view class="order-status-title">
+    您已完成课程班的报名
+  </view>
+
+  <view class="order-status-text">
+    请点击下方微信号renmei01添加班级教师来完成您的学习之旅
+  </view>
+
+ </view>
+
+ <!-- 复制粘贴 -->
+ <view class="copy-btn" bindtap="copySuc">
+  微信号:renmei01(点击可复制)
+ </view>
+
+ <!-- 完成 -->
+ <view class="success-button">
+   <button bindtap="orderSuc">完成</button>
+ </view>
+
+</view>

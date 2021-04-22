@@ -1,0 +1,27 @@
+<!--miniprogram/pages/myClass/index.wxml-->
+<view class="content">
+  <view class="MyClass-box">
+    <view class='list {{TabNum==index?"active":""}}' wx:for="{{selectTabArr}}" wx:key="selectTabArr" bindtap="tanbChange" data-index="{{index}}">
+        <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <!-- 列表 -->
+  <view class="MyClass-list" wx:for="item in 10" wx:key="item">
+    <view class="left">
+      <image src="../../images/index/listContent.jpg"></image>
+      <text>{{listStatus}}</text>
+    </view>
+
+    <view class="right">
+      <view class="title">
+       {{index}} 仁美大学堂（传统山水临摹）网络班培训简章
+      </view>
+      <view class="text-content">
+        <text>导师：赵墨 课时：20节</text>
+        <text>03-15</text>
+      </view>
+    </view>
+  </view>
+
+</view>

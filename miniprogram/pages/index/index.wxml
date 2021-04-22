@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 头部列表Tab -->
+  <view class="header-tab">
+    <view class='list {{TabNum==index?"active":""}}' wx:for="{{headerList}}" wx:key="headerList" bindtap="tanbChange" data-index="{{index}}">
+        <image src="{{item.imgSrc}}"></image>
+        <text>{{item.text}}</text>
+    </view>
+  </view>
+
+  <!-- 书画内容 -->
+  <view class="content-list">
+      <view class="list" wx:for="i in 10" wx:key="i" data-index="{{index}}" bindtap="getListDetail">
+        <image src="{{url?url:'../../images/index/listContent.jpg'}}" class='cover' mode='aspectFit'></image>
+        <view class="title">{{index}}仁美大学堂（传统山水临摹）网络班培训简章</view>
+        <view class="content-intrduce">
+          <text>导师：赵墨  课时：20节</text>
+          <text>03-15</text>
+        </view>
+      </view>
+  </view>
+  
+
+  <!-- 弹窗 -->
+  <view class="Background-pop-up" wx:if="{{PopupShow}}"></view>
+  <view class="Popup" wx:if="{{PopupShow}}">
+      <view class="tip-text">观看需要获取您的手机号进行登录</view>
+      <view class="getNum"><button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">我知道了</button></view>
+  </view>
+</view>

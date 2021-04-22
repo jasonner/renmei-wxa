@@ -1,0 +1,47 @@
+<view class="content">
+  <!-- 视频播放 -->
+  <view class="video-box">
+       <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback" autoplay="true"  enable-danmu controls></video>
+  </view>
+
+  <!-- 视频名称 -->
+  <view class="view-name">
+    <view class="view-name-lsit">
+      <view class="share-title">仁美大学堂(传统山水临摹)线上班级</view>
+      <view class="share-btn-box">
+        <view class="share-btn" bindtap="onShareAppMessage">
+          <image src="../../images/listDetail/shareBtn.png"></image> <text>分享</text> 
+        </view>
+      </view>
+    </view>
+    <view class="user-Class">
+      导师：赵墨 课时：20节
+    </view>
+  </view>
+
+  <!-- 课程目录 -->
+  <view class="CourseCatalogue"> 
+      课程目录（14节）
+  </view>
+
+  <!-- 课程列表 -->
+  <view class='CourseList {{TabNum==index?"CourseListActive":""}}' wx:for="item in 10" wx:key="item">
+    <view class="CourseList-title">
+      <icon class="arow" wx:if="{{TabNum == index}}"></icon><text>传统山水局部山石画法解析传统山水局...</text>
+    </view>
+    <view class="CourseList-time">
+      <view>
+        <text>时长：10:00</text>
+      </view>
+      <view class="CourseList-time-right">
+        <text>12月25日 18:36 全网独播</text>
+      </view>
+    </view>
+  </view>
+
+<!-- 购买按钮 -->
+  <view class="buyBtn" bindtap="goPayList">
+    <button type="submit" >我要购买</button>
+  </view>
+
+</view>

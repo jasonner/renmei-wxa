@@ -1,0 +1,38 @@
+/**index.wxss**/
+.container{
+  background: #F8F8F8;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 100%;
+} 
+
+/* 订单菜单列表 */
+.order-List{
+  width: 92%;
+  height: 86rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  line-height: 40px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.list-content{
+  display: flex;
+  padding: 0 32rpx;
+}
+
+.list-content text{
+  flex: 1;
+}
+
+.list-content .row{
+  text-align: right;
+}

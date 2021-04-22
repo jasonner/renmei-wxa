@@ -1,0 +1,30 @@
+<!--miniprogram/pages/orderList/index.wxml-->
+<view class="content">
+  <view class="MyClass-box">
+    <view class='list {{TabNum==index?"active":""}}' wx:for="{{selectTabArr}}" wx:key="selectTabArr" bindtap="tanbChange" data-index="{{index}}">
+        <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 订单列表 -->
+  <view class="order-list" wx:for="item in 10" wx:key="item">
+    <view class="title">
+      待支付
+    </view>
+
+    <view class="content-list">
+      <image src="../../images/index/listContent.jpg"></image>
+      <view class="list">
+        <view class="header-list">
+            <text class="title">仁美大学堂(传统山水临摹)线上班级</text>
+            <text class="money">￥20000</text>
+        </view>
+        <view class="header-list-couse">
+          <view>导师：赵墨 课时：20节 </view>
+          <view>导师：赵墨 课时：20节</view>
+          <view class="btn" bindtap="PayBtn" >立即支付</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

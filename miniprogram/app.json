@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/index",
+    "pages/listDetail/index",
+    "pages/payList/index",
+    "pages/OrderComplete/index",
+    "pages/myClass/index",
+    "pages/orderList/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "仁美大学堂",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#E03E50",
+    "ext-class": "tabClass",
+    "list": [
+      {
+        "iconPath": "./images/index/indexN.png",
+        "selectedIconPath": "./images/index/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "./images/index/myN.png",
+        "selectedIconPath": "./images/index/my.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ],
+    "debug": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,61 @@
+/* miniprogram/pages/OrderComplete/index.wxss */
+.order-status{
+  width: 686rpx;
+  opacity: 1;
+  background: #ffffff;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60rpx 36rpx;
+  box-sizing: border-box;
+}
+.order-status-icon {
+  margin-top: 66rpx;
+}
+.order-status-title{
+  font-size: 32rpx;
+  font-family: PingFang SC, PingFang SC-Bold;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  margin-top:63rpx;
+}
+.order-status-text{
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #999999;
+  line-height: 42rpx;
+  margin-top: 14rpx;
+}
+.copy-btn{
+  width: 686rpx;
+  height: 107rpx;
+  margin: 0 auto;
+  opacity: 1;
+  background: #4f515b;
+  border-radius: 8rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 107rpx;
+  margin-top: 32rpx;
+}
+
+.success-button button:not([size='mini']){
+  width: 686rpx;
+  height: 107rpx;
+  opacity: 1;
+  background: #ffffff;
+  border-radius: 8rpx;
+  margin-top: 32rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  line-height: 107rpx;
+}

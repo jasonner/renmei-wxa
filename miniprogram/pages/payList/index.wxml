@@ -1,0 +1,67 @@
+<view class="content">
+  <!-- 待支付header -->
+  <view class="wait-pay-header">
+    <view class="left">
+      <image src="../../images/suerPayList/wallet-fill.png"></image>
+      待支付
+    </view>
+    <view class="right">
+      剩余时间60分钟
+    </view>
+  </view>
+
+  <!-- menuList -->
+  <view class="menuList">
+    <view class="List">
+      <image src="../../images/index/listContent.jpg">仁美大学堂(传统山水临摹)线上班级</image>
+      <view class="title">仁美大学堂(传统山水临摹)线上班级</view>
+      <view class="content-text">
+          <view>导师：赵墨 课时：20节</view>
+          <view>导师：赵墨 课时：20节</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 订单详情 -->
+  <view class="order-Details">
+    <!-- 总计 -->
+    <view class="alltotal">
+      <view>总计：</view>
+      <view>￥3000</view>
+    </view>
+
+    <!-- 应付金额 -->
+    <view class="alltotal">
+      <view>应付金额</view>
+      <view>￥0</view>
+    </view>
+
+    <!-- 订单编号 -->
+    <view class="alltotal">
+      <view>订单编号：000000000000000</view>
+    </view>
+  </view>
+
+
+  <!-- 微信支付 -->
+  <view class="Wechat-payment">
+    <view class="left">
+      <image src="../../images/suerPayList/payWay.png"></image>
+      <text>微信支付</text>
+    </view>
+    <view class="right">
+      <icon type="success" size="30"/>
+    </view>
+  </view>
+
+ <!--支付  -->
+  <view class="pay-box">
+    <view class="left">
+      <text>应付：￥365.00</text> 
+      <text>原价36.00</text>
+    </view>
+    <view class="right">
+      <button bindtap="payBtn">支付</button>
+    </view>
+  </view>
+</view>
