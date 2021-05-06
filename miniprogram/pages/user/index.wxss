@@ -36,3 +36,10 @@
 .list-content .row{
   text-align: right;
 }
+.list-content image{
+  width: 13rpx;
+  height: 24rpx;
+  opacity: 1;
+  background: rgba(0,0,0,0.00);
+  margin-top: 31rpx;
+}

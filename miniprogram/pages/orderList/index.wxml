@@ -6,25 +6,31 @@
     </view>
   </view>
   <!-- 订单列表 -->
-  <view class="order-list" wx:for="item in 10" wx:key="item">
+  <view class="order-list" wx:for="{{classList}}" wx:key="index">
     <view class="title">
-      待支付
+      <text wx:if="{{item.status == '1'}}">待支付</text>
+      <text wx:if="{{item.status == '2'}}">已完成</text>
+      <text wx:if="{{item.status == '3'}}">已取消</text>
     </view>
-
-    <view class="content-list">
-      <image src="../../images/index/listContent.jpg"></image>
+  
+    <view class="content-list" catchtap="lookDetail" data-index="{{item.classId}}" data-status="{{item.status}}">
+      <image src="{{item.thumbnail}}"></image>
       <view class="list">
         <view class="header-list">
-            <text class="title">仁美大学堂(传统山水临摹)线上班级</text>
-            <text class="money">￥20000</text>
+            <text class="title">{{item.name}}</text>
+            <text class="money">￥{{item.price}}</text>
         </view>
         <view class="header-list-couse">
-          <view>导师：赵墨 课时：20节 </view>
-          <view>导师：赵墨 课时：20节</view>
-          <view class="btn" bindtap="PayBtn" >立即支付</view>
+          <view>{{item.introduction}} </view>
+          <view>{{item.createTime}}</view>
+          <view class="btn" catchtap="PayBtn" wx:if="{{item.status == '1'}}" data-index="{{item.classId}}">立即支付</view>
         </view>
       </view>
     </view>
+  </view>
 
+  <!-- 底部提示 -->
+  <view class="bottom-Tip" wx:if="{{bottomTipShow}}">
+     ----------------我是有底线的哦----------------
   </view>
 </view>

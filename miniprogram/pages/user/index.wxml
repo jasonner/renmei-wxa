@@ -22,13 +22,13 @@
   <view class="order-List"> 
     <view class="list-content" bindtap="myOrder">
       <text>我的订单</text>
-      <text class="row">></text>
+      <image src="../../images/suerPayList/row.jpg"></image>
     </view>
   </view>
   <view class="order-List" bindtap="goMyclass"> 
     <view class="list-content">
       <text>我的课程班</text>
-      <text class="row">></text>
+      <image src="../../images/suerPayList/row.jpg"></image>
     </view>
   </view>
 </view>

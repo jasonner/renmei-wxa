@@ -6,17 +6,17 @@
       待支付
     </view>
     <view class="right">
-      剩余时间60分钟
+      剩余时间{{orderList.countDown}}分钟
     </view>
   </view>
 
   <!-- menuList -->
   <view class="menuList">
     <view class="List">
-      <image src="../../images/index/listContent.jpg">仁美大学堂(传统山水临摹)线上班级</image>
-      <view class="title">仁美大学堂(传统山水临摹)线上班级</view>
+      <image src="../../images/index/listContent.jpg"></image>
+      <view class="title">{{orderList.name}}</view>
       <view class="content-text">
-          <view>导师：赵墨 课时：20节</view>
+          <view>{{orderListntroduction}}</view>
           <view>导师：赵墨 课时：20节</view>
       </view>
     </view>
@@ -27,18 +27,18 @@
     <!-- 总计 -->
     <view class="alltotal">
       <view>总计：</view>
-      <view>￥3000</view>
+      <view>￥{{orderList.oldPrice}}</view>
     </view>
 
     <!-- 应付金额 -->
     <view class="alltotal">
       <view>应付金额</view>
-      <view>￥0</view>
+      <view>￥{{orderList.price}}</view>
     </view>
 
     <!-- 订单编号 -->
     <view class="alltotal">
-      <view>订单编号：000000000000000</view>
+      <view>订单编号：{{orderList.no}}</view>
     </view>
   </view>
 
@@ -57,8 +57,8 @@
  <!--支付  -->
   <view class="pay-box">
     <view class="left">
-      <text>应付：￥365.00</text> 
-      <text>原价36.00</text>
+      <text>应付：￥{{orderList.price}}</text> 
+      <text>原价{{orderList.oldPrice}}</text>
     </view>
     <view class="right">
       <button bindtap="payBtn">支付</button>

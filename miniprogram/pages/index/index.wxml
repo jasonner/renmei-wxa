@@ -3,24 +3,28 @@
 
   <!-- 头部列表Tab -->
   <view class="header-tab">
-    <view class='list {{TabNum==index?"active":""}}' wx:for="{{headerList}}" wx:key="headerList" bindtap="tanbChange" data-index="{{index}}">
-        <image src="{{item.imgSrc}}"></image>
-        <text>{{item.text}}</text>
+    <view class='list {{TabNum==item.id?"active":""}}' wx:for="{{headerList}}" wx:key="index" bindtap="tanbChange" data-index="{{item.id}}">
+        <image src="{{item.pic}}"></image>
+        <text>{{item.name}}</text>
     </view>
   </view>
 
   <!-- 书画内容 -->
   <view class="content-list">
-      <view class="list" wx:for="i in 10" wx:key="i" data-index="{{index}}" bindtap="getListDetail">
-        <image src="{{url?url:'../../images/index/listContent.jpg'}}" class='cover' mode='aspectFit'></image>
-        <view class="title">{{index}}仁美大学堂（传统山水临摹）网络班培训简章</view>
+      <view class="list" wx:for="{{contentList}}" data-type="{{item.payStatus}}" wx:key="index" data-index="{{item.id}}" bindtap="getListDetail">
+        <image src="{{item.thumbnail}}" class='cover' mode='aspectFit'></image>
+        <view class="title">{{item.name}}</view>
         <view class="content-intrduce">
-          <text>导师：赵墨  课时：20节</text>
-          <text>03-15</text>
+          <text>{{item.introduction}}</text>
+          <text>{{item.createTime}}</text>
         </view>
       </view>
   </view>
   
+  <!-- 底部提示 -->
+  <view class="bottom-Tip" wx:if="{{bottomTipShow}}">
+     ----------------我是有底线的哦----------------
+  </view>
 
   <!-- 弹窗 -->
   <view class="Background-pop-up" wx:if="{{PopupShow}}"></view>

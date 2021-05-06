@@ -7,21 +7,26 @@
   </view>
 
   <!-- 列表 -->
-  <view class="MyClass-list" wx:for="item in 10" wx:key="item">
+  <view class="MyClass-list" wx:for="{{classList}}" wx:key="index" data-type="{{item.status}}" data-index="{{item.id}}" bindtap="getListDetail">
     <view class="left">
-      <image src="../../images/index/listContent.jpg"></image>
-      <text>{{listStatus}}</text>
+      <image src="{{item.thumbnail}}"></image>
+      <text wx:if="{{item.status === '2'}}">已下线</text>
+      <text wx:if="{{item.status === '3'}}">已删除</text>
     </view>
 
     <view class="right">
       <view class="title">
-       {{index}} 仁美大学堂（传统山水临摹）网络班培训简章
+      {{item.name}}
       </view>
       <view class="text-content">
-        <text>导师：赵墨 课时：20节</text>
-        <text>03-15</text>
+        <text>{{item.introduction}}</text>
+        <text>{{item.createTime}}</text>
       </view>
     </view>
   </view>
-
+  
+  <!-- 底部提示 -->
+  <view class="bottom-Tip" wx:if="{{bottomTipShow}}">
+     ----------------我是有底线的哦----------------
+  </view>  
 </view>

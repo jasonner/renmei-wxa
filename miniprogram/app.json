@@ -17,7 +17,7 @@
   },
   "tabBar": {
     "selectedColor": "#E03E50",
-    "ext-class": "tabClass",
+    "text-class": "tabClass",
     "list": [
       {
         "iconPath": "./images/index/indexN.png",

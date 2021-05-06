@@ -1,4 +1,7 @@
 /* miniprogram/pages/listDetail/index.wxss */
+.content{
+  padding-bottom: 30rpx;
+}
 .video-box{
   width: 100%;
   height: 422rpx;
@@ -66,6 +69,9 @@
   margin-top: 60rpx;
   margin-left: 32rpx;
 }
+.share-btn button:not([size='mini']){
+  padding: 0;
+}
 
 .view-name .share-btn image{
   width: 24px;
@@ -123,7 +129,26 @@ padding: 0 40rpx;
 padding-top: 24rpx;
 box-sizing: border-box;
 }
+.view-name .share-btn image{
+  width: 24rpx;
+  height: 22rpx;
+  margin-top: 5.5rpx;
+  float: left;
+  vertical-align: middle;
+  margin-top: 5.5rpx;
+  margin-left: 20rpx;
+}
 
+.view-name .view-name-lsit .share-btn text{
+  font-size: 22rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 31rpx;
+  float: left;
+  margin-left: 7rpx;
+}
 .CourseListActive .CourseList-title{
   font-size: 28rpx;
   font-family: PingFang SC, PingFang SC-Regular;
@@ -184,12 +209,12 @@ box-sizing: border-box;
   width: 100%;
   background: #fff;
   position: fixed;
-  bottom: 0;
+  bottom: 35rpx;
   left: 0;
 }
 
-.CourseList .CourseList-time:nth-last-of-type(1){
-  margin-bottom: 140rpx;
+.CourseList view:nth-last-of-type(1){
+  margin-bottom: 200rpx;
 }
 
 .buyBtn button:not([size='mini']){

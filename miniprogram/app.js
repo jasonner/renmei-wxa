@@ -1,4 +1,11 @@
 //app.js
+const hrp = require('api/hrp.js')
+const customer = require('api/customer.js')
+const pageUtil = require('./utils/page-util.js')
+import WxRequest from './assets/plugins/wx-request/lib/index'
+import WxValidate from './assets/plugins/wx-validate/WxValidate'
+import WxService from './assets/plugins/wx-service/WxService'
+import http from './utils/http.js'
 App({
   onLaunch: function () {
     if (!wx.cloud) {

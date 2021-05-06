@@ -4,7 +4,9 @@
   height: 75rpx;
   background: #ffffff;
   display: flex;
+  padding: 0 24rpx;
 }
+
 .MyClass-box view{
   text-align: center;
   flex: 1;
@@ -59,7 +61,7 @@
   line-height: 94rpx;
 }
 
-.order-lis .header-list .title{
+.order-list .header-list .title{
   width: 376rpx;
   height: 33rpx;
   font-size: 24rpx;
@@ -71,6 +73,8 @@
   text-overflow:clip;
   overflow: hidden;
   white-space: wrap;
+  margin-top: 5rpx;
+  display: inline-block;
 }
 .order-list .header-list .money{
   font-size: 24rpx;
@@ -90,9 +94,15 @@
   text-align: left;
   color: #999999;
   line-height: 36rpx;
+  width: 355rpx;
+  height: 36rpx;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: wrap;
 }
-
-
+.order-list .header-list-couse view:nth-of-type(1){
+  margin-top: 40rpx;
+}
 .order-list .header-list-couse .btn{
   width: 155rpx;
   height: 54rpx;
@@ -109,4 +119,13 @@
   text-align: center;
   line-height: 54rpx;
   margin-top: -30rpx;
+}
+
+/* 底部提示 */
+.bottom-Tip{
+  font-size: 20rpx;
+  color: #999;
+  font-family: PingFang SC, PingFang SC-Heavy;
+  margin:100rpx 0;
+  text-align: center;
 }
